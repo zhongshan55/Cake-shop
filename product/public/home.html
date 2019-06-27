@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+  <head>
+    <title>cake首页</title>
+    <meta charset="utf-8">
+		<link rel="shortcut icon" href="img/cupcake.ico">
+		<link rel="stylesheet" href="header&footer.css" type="text/css">
+      <style>
+       .home-content{  width: 1200px;  margin:0 auto;box-sizing:border-box;}
+       .directory ul{
+           width: 1100px;
+           display: flex;
+           justify-content:space-between;
+           list-style:none;
+           margin:26px auto 0px;
+       }
+       ul{
+           list-style:none;
+       }
+       .directory ul li{
+           width: 200px;
+           height: 100px;
+       }
+       .directory ul li a{
+           display: block;
+           /*height: 100px;        ;*/
+           box-shadow:0 2px 6px 0 rgba(0,0,0,0.06)
+       }
+       .directory ul li a img{
+           display:block;
+           border-radius:8px;
+       }
+       .home-module{
+           /*background: yellow;*/
+           padding:50px;
+       box-sizing:border-box;
+       }
+       .home-module .title{
+           font-size:26px;
+           color:#724228;
+       }
+       .home-module .title span{
+           margin-left:6px;
+           color: #8E5D43;
+           font-size: 14px;
+       }
+       .banner{
+           width: 1100px;
+           height: 250px;
+           margin:25px auto;
+           background: #00f;
+       }
+       .banner>a{
+           display: block;
+       }
+       .banner>a>img{
+           display: block;
+       }
+       .module-cakelist ul{
+           width: 1100px;
+           margin:0 auto;
+           display:flex;
+           justify-content:space-between;
+       }
+       .module-cakelist ul li{
+           width:263px;
+       }
+       .module-cakelist ul li img{
+           background: #fafafa ;
+       }
+       .module-cakelist ul li h2{
+           color:#000;
+           font-size:16px;
+       }
+       .module-cakelist ul li p{
+           color: #616161;
+           font-size: 14px;
+           margin-top:5px;
+           margin-bottom:5px;
+           overflow: hidden;   /*  隐藏文字  */
+           text-overflow:ellipsis;/*  显示...  */
+           white-space:nowrap;   /*不换行*/
+           /*width:100px*/
+       }
+      a.sm-button{
+          display: inline-block;
+          border:1px solid #D5BFA7;
+          border-radius:10px;
+          font-size:12px;
+          padding-left:10px;
+          padding-right:10px;;
+          color: #D5BFA7;
+          }
+      .modulelist-price{
+      border-top:1px dashed #D5BFA7;
+          padding:10px 0;
+          margin-top:10px;
+          font-size: 14px;
+          color: #D5BFA7;
+      }
+      .modulelist-car{
+          float: right;
+          background: #643E28;
+          color: #fff;
+          border:0;
+          outline:0;
+      }
+      </style>
+
+  </head>
+  <body>
+        <!--  顶部导航栏 -->
+				<script src="head.js"></script>
+    <!-- 中间内容区域 -->
+        <!-- 轮播图-->
+   <div class="home-slideshow"></div>
+     <div class="home-content">
+        <!-- 目录锚点-->
+      <div class="directory">
+          <table></table>
+          <ul>
+              <li><a href="#module-newproduct" class="dir-newProduct"><img src="img/newproduct.jpg" alt=""></a></li>
+              <li><a href="#module-birthday" class="dir-birthday"><img src="img/birthday.png" alt=""></a></li>
+              <li><a href="#module-child" class="dir-child"><img src="img/child.png" alt=""></a></li>
+              <li><a href="#module-meeting" class="dir-meeting"><img src="img/meeting.png" alt=""></a></li>
+              <li><a href="#module-activity" class="dir-activity"><img src="img/activity.png" alt=""></a></li>
+          </ul>
+      </div>
+         <!--新品专区-->
+         <div class="home-module" id="module-newproduct">
+             <div class="title">新品 <span>/</span> <span>专区</span></div>
+             <div class="banner"><a href=""><img src="img/bg-newproduct.jpg" alt=""></a></div>
+             <div class="module-cakelist">
+                 <ul>
+                     <li><a href="#">
+                         <img src="img/89803ef2e60bade042e32a0e599321c4.png" alt="">
+                         <h2>黑白巧克力慕斯 皮尔德(Party)</h2>
+                         <p>"孩子的世界,简单到非黑即白"</p>
+                     </a>
+                         <div>
+                             <a href="#" class="sm-button">儿童></a>
+                             <a href="#" class="sm-button">新品></a>
+                             <a href="#" class="sm-button">相识></a>
+                         </div>
+                         <div class="modulelist-price">¥298.00/2.0磅
+                             <button class="modulelist-car">加入购物车</button>
+                         </div>
+                     </li>
+                     <li><a href="#">
+                         <img src="img/6bc820b91c8438eafcad8b0a0936ee73.png" alt="">
+                         <h2>芒果奶油蛋糕</h2>
+                         <p>cake配方芒果百香果慕斯夹心</p>
+                     </a>
+                         <div>
+                             <a href="#" class="sm-button">情侣></a>
+                             <a href="#" class="sm-button">儿童></a>
+                             <a href="#" class="sm-button">聚会></a>
+                             <a href="#" class="sm-button">人气></a>
+                         </div>
+                         <div class="modulelist-price">¥198.00/2.0磅
+                             <button class="modulelist-car">加入购物车</button>
+                         </div>
+                     </li>
+                     <li><a href="">
+                         <img src="img/dfe6f2c320b07c64fbff7c43973ffe38.png" alt="">
+                         <h2>百香果酸乳酪慕斯（木糖醇）</h2>
+                         <p>冰淇淋口感，不同层次的酸与冰凉</p>
+                     </a>
+                         <div>
+                             <a href="#" class="sm-button">情侣></a>
+                             <a href="#" class="sm-button">低温></a>
+                             <a href="#" class="sm-button">新品></a>
+                             <a href="#" class="sm-button">儿童>></a>
+                         </div>
+                         <div class="modulelist-price">¥298.00/1.0磅
+                             <button class="modulelist-car">加入购物车</button>
+                         </div>
+                     </li>
+                     <li><a href="">
+                         <img src="img/1670e3f1102098f21e6ec22009e3f831.png" alt="">
+                         <h2>心语心愿</h2>
+                         <p>椰子香气，蛋糕坯的颗粒感平衡奶油的软滑，烛光</p>
+                     </a>
+                         <div>
+                             <a href="#" class="sm-button">情侣></a>
+                             <a href="#" class="sm-button">生日></a>
+                             <a href="#" class="sm-button">儿童></a>
+                             <a href="#" class="sm-button">结婚></a>
+                         </div>
+                         <div class="modulelist-price">¥298.00/1.0磅
+                             <button class="modulelist-car">加入购物车</button>
+                         </div>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+        <!-- 生日专区-->
+        <div class="home-module" id="module-birthday">
+            <div class="title">生日 <span>/</span> <span>专区</span></div>
+            <div class="banner"><a href=""><img src="img/birthday.jpg" alt=""></a></div>
+            <div class="module-cakelist">
+                <ul>
+                    <li><a href="#">
+                        <img src="img/89803ef2e60bade042e32a0e599321c4.png" alt="">
+                        <h2>黑白巧克力慕斯 皮尔德(Party)</h2>
+                        <p>"孩子的世界,简单到非黑即白"</p>
+                    </a>
+                        <div>
+                            <a href="#" class="sm-button">儿童></a>
+                            <a href="#" class="sm-button">新品></a>
+                            <a href="#" class="sm-button">相识></a>
+                        </div>
+                        <div class="modulelist-price">¥298.00/2.0磅
+                            <button class="modulelist-car">加入购物车</button>
+                        </div>
+                    </li>
+                    <li><a href="#">
+                        <img src="img/6bc820b91c8438eafcad8b0a0936ee73.png" alt="">
+                        <h2>芒果奶油蛋糕</h2>
+                        <p>cake配方芒果百香果慕斯夹心</p>
+                    </a>
+                        <div>
+                            <a href="#" class="sm-button">情侣></a>
+                            <a href="#" class="sm-button">儿童></a>
+                            <a href="#" class="sm-button">聚会></a>
+                            <a href="#" class="sm-button">人气></a>
+                        </div>
+                        <div class="modulelist-price">¥198.00/2.0磅
+                            <button class="modulelist-car">加入购物车</button>
+                        </div>
+                    </li>
+                    <li><a href="">
+                        <img src="img/dfe6f2c320b07c64fbff7c43973ffe38.png" alt="">
+                        <h2>百香果酸乳酪慕斯（木糖醇）</h2>
+                        <p>冰淇淋口感，不同层次的酸与冰凉</p>
+                    </a>
+                        <div>
+                            <a href="#" class="sm-button">情侣></a>
+                            <a href="#" class="sm-button">低温></a>
+                            <a href="#" class="sm-button">新品></a>
+                            <a href="#" class="sm-button">儿童>></a>
+                        </div>
+                        <div class="modulelist-price">¥298.00/1.0磅
+                            <button class="modulelist-car">加入购物车</button>
+                        </div>
+                    </li>
+                    <li><a href="">
+                        <img src="img/1670e3f1102098f21e6ec22009e3f831.png" alt="">
+                        <h2>心语心愿</h2>
+                        <p>椰子香气，蛋糕坯的颗粒感平衡奶油的软滑，烛光</p>
+                    </a>
+                        <div>
+                            <a href="#" class="sm-button">情侣></a>
+                            <a href="#" class="sm-button">生日></a>
+                            <a href="#" class="sm-button">儿童></a>
+                            <a href="#" class="sm-button">结婚></a>
+                        </div>
+                        <div class="modulelist-price">¥298.00/1.0磅
+                            <button class="modulelist-car">加入购物车</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 儿童专区-->
+      <div class="home-module" id="module-child">
+          <div class="title">儿童 <span>/</span> <span>专区</span></div>
+          <div class="banner"><a href=""><img src="img/bg-meeting.jpg" alt=""></a></div>
+          <div class="module-cakelist">
+              <ul>
+                  <li><a href="#">
+                      <img src="img/89803ef2e60bade042e32a0e599321c4.png" alt="">
+                      <h2>黑白巧克力慕斯 皮尔德(Party)</h2>
+                      <p>"孩子的世界,简单到非黑即白"</p>
+                  </a>
+                      <div>
+                          <a href="#" class="sm-button">儿童></a>
+                          <a href="#" class="sm-button">新品></a>
+                          <a href="#" class="sm-button">相识></a>
+                      </div>
+                      <div class="modulelist-price">¥298.00/2.0磅
+                          <button class="modulelist-car">加入购物车</button>
+                      </div>
+                  </li>
+                  <li><a href="#">
+                      <img src="img/6bc820b91c8438eafcad8b0a0936ee73.png" alt="">
+                      <h2>芒果奶油蛋糕</h2>
+                      <p>cake配方芒果百香果慕斯夹心</p>
+                       </a>
+                      <div>
+                          <a href="#" class="sm-button">情侣></a>
+                          <a href="#" class="sm-button">儿童></a>
+                          <a href="#" class="sm-button">聚会></a>
+                          <a href="#" class="sm-button">人气></a>
+                      </div>
+                      <div class="modulelist-price">¥198.00/2.0磅
+                          <button class="modulelist-car">加入购物车</button>
+                      </div>
+                  </li>
+                  <li><a href="">
+                  <img src="img/dfe6f2c320b07c64fbff7c43973ffe38.png" alt="">
+                  <h2>百香果酸乳酪慕斯（木糖醇）</h2>
+                  <p>冰淇淋口感，不同层次的酸与冰凉</p>
+                      </a>
+                  <div>
+                      <a href="#" class="sm-button">情侣></a>
+                      <a href="#" class="sm-button">低温></a>
+                      <a href="#" class="sm-button">新品></a>
+                      <a href="#" class="sm-button">儿童>></a>
+                  </div>
+                  <div class="modulelist-price">¥298.00/1.0磅
+                      <button class="modulelist-car">加入购物车</button>
+                  </div>
+                  </li>
+                  <li><a href="">
+                  <img src="img/1670e3f1102098f21e6ec22009e3f831.png" alt="">
+                  <h2>心语心愿</h2>
+                  <p>椰子香气，蛋糕坯的颗粒感平衡奶油的软滑，烛光</p>
+                      </a>
+                  <div>
+                      <a href="#" class="sm-button">情侣></a>
+                      <a href="#" class="sm-button">生日></a>
+                      <a href="#" class="sm-button">儿童></a>
+                      <a href="#" class="sm-button">结婚></a>
+                  </div>
+                  <div class="modulelist-price">¥298.00/1.0磅
+                      <button class="modulelist-car">加入购物车</button>
+                  </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+        <!-- 聚会专区-->
+        <div class="home-module" id="module-meeting">
+            <div class="title">聚会 <span>/</span> <span>专区</span></div>
+            <div class="banner"><a href=""><img src="img/bg-child.jpg" alt=""></a></div>
+            <div class="module-cakelist">
+                <ul>
+                    <li><a href="#">
+                        <img src="img/89803ef2e60bade042e32a0e599321c4.png" alt="">
+                        <h2>黑白巧克力慕斯 皮尔德(Party)</h2>
+                        <p>"孩子的世界,简单到非黑即白"</p>
+                    </a>
+                        <div>
+                            <a href="#" class="sm-button">儿童></a>
+                            <a href="#" class="sm-button">新品></a>
+                            <a href="#" class="sm-button">相识></a>
+                        </div>
+                        <div class="modulelist-price">¥298.00/2.0磅
+                            <button class="modulelist-car">加入购物车</button>
+                        </div>
+                    </li>
+                    <li><a href="#">
+                        <img src="img/6bc820b91c8438eafcad8b0a0936ee73.png" alt="">
+                        <h2>芒果奶油蛋糕</h2>
+                        <p>cake配方芒果百香果慕斯夹心</p>
+                    </a>
+                        <div>
+                            <a href="#" class="sm-button">情侣></a>
+                            <a href="#" class="sm-button">儿童></a>
+                            <a href="#" class="sm-button">聚会></a>
+                            <a href="#" class="sm-button">人气></a>
+                        </div>
+                        <div class="modulelist-price">¥198.00/2.0磅
+                            <button class="modulelist-car">加入购物车</button>
+                        </div>
+                    </li>
+                    <li><a href="">
+                        <img src="img/dfe6f2c320b07c64fbff7c43973ffe38.png" alt="">
+                        <h2>百香果酸乳酪慕斯（木糖醇）</h2>
+                        <p>冰淇淋口感，不同层次的酸与冰凉</p>
+                    </a>
+                        <div>
+                            <a href="#" class="sm-button">情侣></a>
+                            <a href="#" class="sm-button">低温></a>
+                            <a href="#" class="sm-button">新品></a>
+                            <a href="#" class="sm-button">儿童>></a>
+                        </div>
+                        <div class="modulelist-price">¥298.00/1.0磅
+                            <button class="modulelist-car">加入购物车</button>
+                        </div>
+                    </li>
+                    <li><a href="">
+                        <img src="img/1670e3f1102098f21e6ec22009e3f831.png" alt="">
+                        <h2>心语心愿</h2>
+                        <p>椰子香气，蛋糕坯的颗粒感平衡奶油的软滑，烛光</p>
+                    </a>
+                        <div>
+                            <a href="#" class="sm-button">情侣></a>
+                            <a href="#" class="sm-button">生日></a>
+                            <a href="#" class="sm-button">儿童></a>
+                            <a href="#" class="sm-button">结婚></a>
+                        </div>
+                        <div class="modulelist-price">¥298.00/1.0磅
+                            <button class="modulelist-car">加入购物车</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 活动专区-->
+        <div class="home-module" id="module-activity">
+        </div>
+     </div>
+        <!--  底部部 -->
+        <script src="footer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+  <head>
+    <title>蛋糕官网-登录</title>
+    <meta charset="utf-8">
+	<link rel="shortcut icon" href="img/cupcake.ico">
+	<style>
+	 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+            margin:0;padding:0;font-size: 14px;
+	}
+	a{
+	  text-decoration:none;
+	  color:#684029;
+	}
+	.header-box{
+	  width:100%;
+	  height:80px;
+	  display:block;
+	  position:fixed;
+	  border-bottom:2px solid #e1e1e2;
+	  background: #fff;
+	}
+	.header-content a:hover{color:rgb(187,151,114)}
+	.header-content{
+	 margin:0 auto;
+     max-width:1200px;
+	 min-width:760px;
+	 height:80px;
+	}
+	.header-logo{
+	 padding-top:18px;
+	 width:120px;
+	 height:44px;
+	 display:block;
+	 float:left;
+
+	}
+	.header-content a img{
+	  width:120px;
+	 
+	}
+	.header-content ul{
+	  list-style:none;
+	  display: inline-block;
+	  	 margin-left:30px;
+	}
+	.header-content ul li{
+	   float:left;
+	   display: inline-block;
+/*	   width: 28px;*/
+	   height: 80px;
+	   margin:0px 15px; 
+	   background-color: #fff;
+	   font-size:14px;
+	   line-height:80px;
+	}
+	.header-content .header-right{
+	  float:right;
+/*	  width:328px;*/
+	  height:80px;
+	  line-height:80px;
+	}
+	.header-right .app-download{
+      margin-right:20px;
+     display: inline-block;
+	} 
+	#gz{
+	  width:62px;
+      display: inline-block;
+	  margin-left:22px;
+	}
+	.header-right .msg{
+      width:50px;
+      display: inline-block;
+	}
+	.header-right span{
+     display: inline-block;
+	 width:80px;
+	}
+	.header-right a img{
+     width:18px;
+	display: inline-block;
+	}
+	.collapse{
+	  height: 80px;
+	}
+  /*  登录  */
+     .login-background{
+	   background:url(img/login-background.jpg)no-repeat top center;
+	   width:100%;
+	   height:868px;
+   /*	   margin-top:80px;*/
+	 }
+	 .center-box{
+	    width:1200px;
+			min-height:213px;
+   /*			background-color: #aaa;*/
+			margin:0 auto;
+			height:100%;
+	
+	 }
+	 .form-login-box{
+	   width:386px;
+	   height:355px;
+	   background-color: #fff;
+		 border:1px  solid #E9E9E9;
+		 float:right;
+		 margin-top:114px;
+		 padding:28px 42px;
+		 box-sizing:border-box;
+	 }
+	 .login-background table{
+	   width: 100%;
+	 }
+	 .login-background table tr td{
+	   font-size: 12px;
+		 color:#684029;
+	 }
+
+     #upwd-login,#msg-login{
+     	   height:25px;
+	   font-size:18px;
+		 font-weight:normal;
+		 width: 150px;
+		 color:#684029;
+		 margin-bottom:20px;
+	 }
+    #msg-login{
+		 color:#c9c9c9
+		}
+	  #uname,#upwd{
+		 width:100%;height:36px;
+		 border:1px solid #efefef;
+		 border-radius:2px;
+     outline: none;
+		 margin-bottom:10px;
+		 padding:2px;
+		}
+		#msg{
+		 height:30px;
+		}
+        button.login{
+		  width:100%;
+			height:48px;
+			padding:0,5px;
+			background-color: #442818;
+			color:#fff;
+			font-size:18px;
+			border:0;
+			outline:none;
+			border-radius:2px;
+			margin-bottom:10px;
+		}
+		 #remember{
+		   vertical-align: middle
+		 }
+		 #msg{color:red;}
+     /*  修改input提示语颜色  */
+		 input::-webkit-input-placeholder { /* WebKit browsers */ 
+    color: rgb(191,191,191); 
+		font-size: 12px;
+    }
+
+   /* 底部样式*/
+    .footer{
+		 width: 100%;
+		 background-color: rgb(51,51,51);
+		 font-size:10px;
+		 color:#9a9a9a;
+		 padding-top:50px;
+		}
+		.footer{
+		 text-align:center;
+		}
+		.footer-logo img{
+		width: 96px;
+		height: 36px;
+		margin:0 auto;
+		display:block;
+		}
+		.footer-nav{
+		 margin-top:25px;
+		}
+    .footer-nav a{
+		  color:#9a9a9a;
+			margin:50px;
+			color:#fff;
+			font-size:12px;
+		}
+		.footer-icon a{
+		  width: 50px;
+			height: 50px;
+			border-radius:50%;
+			background-color: #464646;
+			display:inline-block;
+			text-align:center;
+			vertical-align:middle;
+			line-height:50px;
+			color:#fff;
+			font-size:16px;
+			margin:25px;
+
+		 }
+    .footer-icon img{
+		  width: 30px;
+			height: 30px;
+			margin-top:10px;
+		 }
+    .footer-text p{
+		font-size:10px ;
+		font-weight:bold;
+		 }
+		.footer-text span{
+		 display:block;
+		 font-size:10px;
+		 }
+		.footer-copyright{
+		font-size: 12px;
+		height:46px;
+		line-height:46px;
+		border-top:1px solid #616161;
+        margin-top:15px;
+		 }
+	</style>
+  </head> 
+
+  <body>
+	<div class="header-box">
+	 <div class="header">
+	  <div class=header-content>
+	    <a href="#" class="header-logo">
+		   <img src="img/logo.png" alt="logo" width=144px>
+		</a>
+		<ul>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">蛋糕</a></li>
+			<li><a href="#">面包</a></li>
+			<li><a href="#">冰淇淋</a></li>
+			<li><a href="#">咖啡下午茶</a></li>
+			<li><a href="#">咖啡全国送</a></li>
+			<li><a href="#">企业专区</a></li>
+		</ul>
+		<div class="header-right">
+		  <a href="#" class="app-download">APP下载</a>
+		  <a id="gz">广州</a>
+		  <a href="" class="msg">消息</a>
+		  <span class="headr-login">
+		    <a href="javascript:location.href='http://127.0.0.1:8080/login.html'">登录</a>
+			/
+			<a href="javascript:location.href='http://127.0.0.1:8080/reg.html'">注册</a>
+		  </span>
+		  <a href="#">
+		    <img src="img/cat.png" alt="" >
+		  </a>
+		</div>
+	  </div>
+     </div>
+	</div>
+	<div class="collapse"></div>  <!-- 防止顶部坍塌-->
+ <!-- 登录   -->
+ <table></table>
+	<div class="login-background">
+	    <div class="center-box"> 
+		     <div class="form-login-box">
+	           <table>
+	           	<tr>
+	           		<td align="center"><h1 id="upwd-login">账号密码登录</h1></td>
+	           		<td ><h1 id="msg-login">|&nbsp&nbsp&nbsp手机验证码登录</h1></td>
+	           	</tr>
+	           	<tr>
+	           		<td colspan="2">
+					  <input type="text" name="uname" id="uname" placeholder="&nbsp请输入您的账号">
+					</td>
+	           	</tr>
+	           	<tr>
+	           		<td colspan="2">
+					  <input type="password" name="upwd" id="upwd" placeholder="&nbsp输入密码">
+					</td>
+	           	
+	           	</tr>
+	           	<tr>
+	           		<td colspan="2"><div id="msg"></div></td>
+	           	</tr>
+	           	<tr>
+	           		<td colspan="2">
+					       <button class="login" onclick="login()">登录</button>
+					      </td>
+	           	</tr>
+	           	<tr>
+					<td>
+	           		<label for="remember"><input type="checkbox" id="remember" checked >&nbsp记住账号</label>
+					      </td>
+	           		<td align="right">
+					  <a href="#">忘记密码</a>&nbsp&nbsp&nbsp&nbsp
+					  <a href="javascript:location.href='http://127.0.0.1:8080/reg.html'">去注册</a>
+					       </td>
+	           	</tr>
+	           </table>
+	   
+	         </div> 
+        </div> 
+	</div>
+<!--底部  -->
+  <div class="footer">
+	   <div class="footer-logo"><img src="img/footer-logo.png" alt=""></div>
+		 <div class="footer-nav">
+		   <a href="#">联系我们</a><span>|</span>
+		   <a href="#">订购帮助</a><span>|</span>
+		   <a href="#">企业合作</a><span>|</span>
+		   <a href="">生产经营资质</a><span>|</span>
+		   <a href="#">公告专区</a>
+		 </div>
+		 <div class="footer-icon">
+		    <a href="#"><img src="img/footericon-01.png" alt=""></a>
+		    <a href="#"><img src="img/footericon-02.png" alt=""></a>
+		    <a href="#">App</a>    
+		 </div>
+		 <div class="footer-text">
+		 <p>订购专线：400 650 2121（服务时间 08:00–22:00），企业团购热线：021-37768396</p>
+     <span>客服电话：021-23099721（全国），kefu@21cake.com（邮箱）</span>
+		 <span>杭州/广州：提前5小时预订；北京：提前6小时预订；上海：提前5.5-6小时预订；天津/苏州/无锡/深圳：提前8小时预订（部分偏远地区除外，当日22点以后订单，于次日8点开始审核）</span>
+		 <span>当日蛋糕配送截止下单时间：北京：16:50；上海：16:30；杭州/广州：13:50；天津：10:30；苏州/无锡/深圳：11:00</span>
+		 <span>网站注册公司名称: 北京廿一客食品有限公司 地址: 北京市北京经济技术开发区兴海二街5号院3号楼</span>
+		 </div>
+		 <div class="footer-copyright"><span>Copyright© 21Cake蛋糕官网商城 2007-2018, 版权所有 京ICP备14006254号-1</span></div>
+  </div>
+
+
+
+	<script>
+	  function login(){
+		 var  xhr=new XMLHttpRequest();	 
+		     xhr.onreadystatechange=function(){
+			   if(xhr.readyState==4 && xhr.status==200){
+				   var result=xhr.responseText;
+					 	console.log(result);
+						if(result==1){
+						  console.log("登录成功");
+						  window.location.href='home.html';
+						}else{
+						 msg.innerHTML="账号/密码有误!";
+						}   
+				 }
+			 }
+			 xhr.open("get","user/v1/login/"+uname.value+"-"+upwd.value,true);
+			 xhr.send();
+		}
+	</script>	
+    
+  </body>
+</html>
