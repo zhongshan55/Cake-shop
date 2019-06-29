@@ -106,18 +106,51 @@
           outline:0;
       }
       /* 活动门 */
+      #module-activity .activity-content{
+         padding-top:10px;
+      }
       #module-activity .activity-a{
         width: 50%;
         margin-top:20px; 
         padding-left:10px;
         padding-right:10px;
-        border-radius:10px;
+        /* border-radius:10px; */
         box-sizing: border-box;
         display:inline-block;
       }
       #module-activity .activity-a img{
           width: 100%;
+          border-radius:10px; 
       }
+      /* 文章 */
+      #module-article .article-content{
+          display:flex;
+          justify-content: space-between
+      }
+      #module-article .article-bg{
+          border-top-left-radius:10px; 
+          border-top-right-radius:10px; 
+          /* background: pink; */
+          width: 542px;
+          height:345px;
+          box-shadow:0 0 6px rgba(0,0,0,0.10);
+
+      }
+      #module-article .article-bg img{
+          width: 100%;
+          border-top-left-radius:10px;
+          border-top-right-radius:10px;
+          }
+     #module-article .article-bg p:first-of-type{
+         font-size:24px;
+         margin-left:15px;
+         margin-top:10px;
+     }
+     #module-article .article-bg p:last-of-type{
+         font-size:14px;
+         margin-left:15px;
+         margin-top:20px;
+         }
       </style>
 
   </head>
@@ -414,14 +447,27 @@
         <!-- 活动专区-->
         <div class="home-module" id="module-activity">
                 <div class="title">活动门 <span>/</span> <span>是被吸引了吧</span></div>
-                <div>
+                <div class="activity-content">
                      <a href="#" class="activity-a"> <img src="img/activity2.jpg" alt="activity" ></a><a href="#" class="activity-a"> <img src="img/activity2.jpg" alt="activity" ></a>
                      <!-- <img src="img/activity2.jpg" alt="activity" class="activity-bg"> -->
                 </div>
         </div>
         <!-- 廿一客/ -->
-        <div class="home-module" id="module-aarticle">
+        <div class="home-module" id="module-article">
                 <div class="title">廿一客 <span>/</span> <span>文章</span></div>
+             <ul class="article-content">
+                <li class="article-bg">
+                    <a href="#"><img src="img/article-1.jpg" alt=""></a>
+                    <p><a href="#">冬季刊·进博会</a></p>
+                  <p class=""><a href="#">阅读全文>></a></p>
+                </li>
+                <li class="article-bg">
+                    <a href="#"><img src="img/article-2.jpg" alt=""></a>
+                    <p><a href="#">廿一志秋刊·客服Q&A</a></p>
+                  <p class=""><a href="#">阅读全文>></a></p>
+                </li>
+             </ul>
+
         </div>   
      </div>
         <!--  底部部 -->
