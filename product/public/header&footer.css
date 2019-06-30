@@ -13,6 +13,7 @@
 	  position:fixed;
 	  border-bottom:2px solid #e1e1e2;
 	  background: #fff;
+	  z-index: 100;
 	}
 	.header-content a:hover{color:rgb(187,151,114)}
 	.header-content{
