@@ -38,8 +38,13 @@
       .detail-header .top-thumb img:hover{
        border:1px solid #684029;
       }
+      .options{
+          border-bottom: 1px solid #D8D8D8;
+          padding-bottom:10px;
+      }
       .options-left{
           width: 484px;
+          display:inline-block;
       }
       .options-left h2{
           color:#684029;
@@ -99,6 +104,81 @@
           margin:0 20px;
           width: 20px;;
       }
+      .options-right{
+          width: 500px;
+          display: inline-block;
+          float: right;
+          margin-top: 20px;     
+      }
+      .options-right-top img{
+          width: 300px;
+          vertical-align:-15px;
+      }
+      .options-right-top{
+          /* background: pink;
+          border: 1px solid;     */
+          margin-bottom: 15px;
+      }
+      .options-right-top .unit_price{
+          font-size:26px ;
+          color: #C69C6D;
+          margin-left: 30px;
+      }
+      .options-right-top .pound{
+          font-size:18px ;
+          color: #C69C6D;
+      }
+      .options-right>p{
+          font-size: 12px;
+          color:#684029;
+          padding-left:20px;
+      }
+      .options-right>p>i{
+          width: 25px;
+          height: 25px;
+          display: inline-block;
+          margin:0 10px;
+          vertical-align: middle;
+          background-image: url(img/icon.png);
+          background-size: 310px 120px;
+      }
+      .options-right>p:first-of-type>i{
+          background-position: -210px -5px;
+      }
+      .options-right>p:nth-of-type(2)>i{
+        background-position: -235px -5px;
+      }
+      .options-right>p:nth-of-type(3)>i{
+        background-position: -260px -5px;
+      }
+      .options-right>p:nth-of-type(4)>i{
+        background-position: -285px -5px;
+      }
+      .options-right .size{
+          margin-top:30px;
+      }
+      .options-right .size span{
+          font-size: 12px;
+      }
+      .options-right .size ul{
+         list-style: none;
+        margin-left:15px;
+        display: inline-block;
+      }
+      .options-right .size ul>li{
+        display:inline-block;
+        border: 1px solid #e7e0dd;
+        color:#684029;
+        font-size: 12px;
+        width: 60px;
+        height: 30px;
+        padding:0 5px;
+        line-height: 30px;
+        text-align: center;
+        margin-right: 15px;
+        box-sizing: border-box;
+
+      }
     </style>
 </head>
 <body>
@@ -140,14 +220,36 @@
               <div class="sweetness">
                 <img src="img/sweet.png" alt=""><span>参考甜度:</span><img src="img/sweet_02.png" alt=""><img src="img/sweet_02.png" alt=""><img src="img/sweet_02.png" alt=""><img src="img/sweet_01.png" alt="">
               </div>
-
-
             </div>
             <div class="options-right">
-
+              <div class="options-right-top">
+                <img src="img/3.00P-full-22.50.png" alt=""><span class="unit_price">¥198.00 </span><span class="pound">/1.0磅</span>
+              </div>
+              <p><i></i>约13.5x13.5</p>
+              <p><i></i>适合3-4人分享</p>
+              <p><i></i>含5套餐具（蜡烛需单独订购</p>
+              <p><i></i>最早明天 14:00配送</p>
+              <div class="size">
+                  <span>商品规格</span>
+                  <ul class="">
+                      <li class=""><i></i>1.0磅</li>
+                      <li class="">2.0磅</li>
+                      <li class="">3.0磅</li>
+                      <li class="">5.0磅</li>
+                      <li class="">跟多磅数</li>
+                  </ul>
+              </div>
+              <div>
+                  <span>换购商品</span>
+                 <a href=""> <img src="" alt=""><i></i></a>
+              </div>
+              <button class="buy">立即购买</button>
+              <button class="shopping_cart">立即购买</button>
             </div>
         </div>
-        <div class="describe"></div>
+        <div class="describe">
+            fasdfsafsd
+        </div>
     </div>
     <script src="footer.js"></script>
 </body>
