@@ -8,24 +8,44 @@
     <link rel="shortcut icon" href="img/cupcake.ico">
     <link rel="stylesheet" href="header&footer.css" type="text/css">
     <style>
+        
       .detail-box{
           width: 1050px;
           margin:0 auto;
       }
+      .detail-header{
+          position:relative;
+      }
       .detail-header .top-picture{
-        display:inline-block;       
-        background: pink;   
+        display:inline-block;   
+        width:924px;  
       }
       .detail-header .top-picture img{
-           width:924px;
+           width:100%;       
       }
       .detail-header .top-thumb{
           display:inline-block;
-          background: yellow;
           width:90px;
+          position:absolute;
+          right:0;
+          bottom:0;
       }
       .detail-header .top-thumb img{
           width:90px;
+          box-sizing: border-box;
+          margin-top:20px;
+      }
+      .detail-header .top-thumb img:hover{
+       border:1px solid #684029;
+      }
+      .options-left{
+          width: 484px;
+      }
+      .options-left h2{
+          color:#684029;
+          font-size:20px;
+          font-weight:normal;
+          margin-top:20px;
       }
       a.sm-button{
           display: inline-block;
@@ -35,10 +55,54 @@
           padding-left:10px;
           padding-right:10px;;
           color: #D5BFA7;
-    }
+          margin-right:6px;
+      }
+      .options-left p:first-of-type{
+          font-size: 12px;
+          color:red;
+          margin-bottom:20px;
+          margin-top:5px;
+      }
+      .options-left .pcicon{
+          height: 50px;
+          line-height:
+      }
+      .options-left .pcicon img{
+        width: 50px;
+        height: 50px;
+        vertical-align:middle;
+      }
+      .options-left .pcicon {
+          color:#684029;
+      }
+      .options-left p:not(:first-child){
+          color:#684029;
+          font-size: 12px;
+          margin-top:10px;
+          margin-bottom:10px;
+      }
+      .options-left p:nth-of-type(5),.options-left p:nth-of-type(6){
+        color:red;
+      }
+      .options-left .term i{
+       width: 19px;
+       height: 20px;
+       background-image: url(img/icon.png);
+       display: inline-block;
+       background-position:-118px -2px;
+       background-size:240px;
+       margin:20px 20px;
+       vertical-align: middle;
+      }
+      .options-left .sweetness img{
+          vertical-align: middle;
+          margin:0 20px;
+          width: 20px;;
+      }
     </style>
 </head>
 <body>
+     <script src="head.js"></script>
     <div class="detail-box" >
         <div class="detail-header">
             <div class="top-picture"><img src="img/273832b02fb1be17332517d83274a317.jpg" alt="" class=""></div>
@@ -51,6 +115,7 @@
         <div class="options">
             <div class="options-left">
               <h2>Bailey's Love Triangle 百利甜情人</h1>
+                <p>一款专门为儿童设计，以天然植物为基础的蛋糕，非高脂、非高糖</p>
               <div class="buttons">
                     <a href="" class="sm-button">情侣></a>
                     <a href="" class="sm-button">人气></a>
@@ -70,10 +135,10 @@
               <p>* 4月25日开始夹心为：芒果。</p>
               <p>*玫瑰花瓣经过消毒处理，仅用作装饰使用（使用围边纸与蛋糕隔开），不可食用。</p>
               <div class="term">
-                  <img src="" alt=""><span>保鲜条件:</span><span>0-4℃保藏10小时，5℃食用为佳</span>
+                  <i></i><span>保鲜条件:</span><span>0-4℃保藏10小时，5℃食用为佳</span>
               </div>
               <div class="sweetness">
-                <img src="" alt=""><span>参考甜度:</span><img src="" alt="">
+                <img src="img/sweet.png" alt=""><span>参考甜度:</span><img src="img/sweet_02.png" alt=""><img src="img/sweet_02.png" alt=""><img src="img/sweet_02.png" alt=""><img src="img/sweet_01.png" alt="">
               </div>
 
 
@@ -84,5 +149,6 @@
         </div>
         <div class="describe"></div>
     </div>
+    <script src="footer.js"></script>
 </body>
 </html>
