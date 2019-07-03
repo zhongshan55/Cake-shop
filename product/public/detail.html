@@ -8,18 +8,33 @@
     <link rel="shortcut icon" href="img/cupcake.ico">
     <link rel="stylesheet" href="header&footer.css" type="text/css">
     <style>
-        
+     @media screen and (max-width:1599px){  
       .detail-box{
           width: 1050px;
           margin:0 auto;
       }
+    }
+    @media (min-width:1600px){
+        .detail-box{
+          width: 1200px;
+          margin:0 auto;
+      }
+    }
       .detail-header{
           position:relative;
       }
+      @media screen and (min-width:1600px){
+      .detail-header .top-picture{
+        display:inline-block;   
+        width:1088px;  
+      }
+    }
+    @media screen and (max-width:1599x){
       .detail-header .top-picture{
         display:inline-block;   
         width:924px;  
       }
+    }
       .detail-header .top-picture img{
            width:100%;       
       }
@@ -106,14 +121,24 @@
           margin:0 20px;
           width: 20px;;
       }
+      @media (min-width:1600px){
       .options-right{
+          width: 630px;
+          display: inline-block;
+          margin-top: 20px;     
+          margin-left:80px;
+          position: relative;
+      }
+     }
+     @media (max-width:1599px){
+        .options-right{
           width: 500px;
           display: inline-block;
-          /* float: right; */
           margin-top: 20px;     
-          /* background: yellow; */
           margin-left:61px;
+          position: relative;
       }
+     }
 
       .options-right-top img{
           width: 300px;
@@ -131,12 +156,26 @@
           font-size:18px ;
           color: #C69C6D;
       }
-      .options-right>p{
+      .options-right .weight_time{
+          width: 280px;
+      }
+      @media (min-width:1600px){
+        .options-right .weight_time{
+           position: absolute;
+           right: 30px;
+           top:20px;
+        }
+      }
+      /* @media (max-width:1599px){
+        .options-right .weight_time{
+        }
+      } */
+      .options-right>.weight_time>p{
           font-size: 12px;
           color:#684029;
           padding-left:20px;
       }
-      .options-right>p>i{
+      .options-right>.weight_time>p>i{
           width: 25px;
           height: 25px;
           display: inline-block;
@@ -145,16 +184,16 @@
           background-image: url(img/icon.png);
           background-size: 310px 120px;
       }
-      .options-right>p:first-of-type>i{
+      .options-right>.weight_time>p:first-of-type>i{
           background-position: -210px -5px;
       }
-      .options-right>p:nth-of-type(2)>i{
+      .options-right>.weight_time>p:nth-of-type(2)>i{
         background-position: -235px -5px;
       }
-      .options-right>p:nth-of-type(3)>i{
+      .options-right>.weight_time>p:nth-of-type(3)>i{
         background-position: -260px -5px;
       }
-      .options-right>p:nth-of-type(4)>i{
+      .options-right>.weight_time>p:nth-of-type(4)>i{
         background-position: -285px -5px;
       }
       .options-right .size{
@@ -292,10 +331,12 @@
               <div class="options-right-top">
                 <img src="img/3.00P-full-22.50.png" alt=""><span class="unit_price">¥198.00 </span><span class="pound">/1.0磅</span>
               </div>
-              <p><i></i>约13.5x13.5</p>
-              <p><i></i>适合3-4人分享</p>
-              <p><i></i>含5套餐具（蜡烛需单独订购</p>
-              <p><i></i>最早明天 14:00配送</p>
+              <div class="weight_time">
+                <p><i></i>约13.5x13.5</p>
+                <p><i></i>适合3-4人分享</p>
+                <p><i></i>含5套餐具（蜡烛需单独订购</p>
+                <p><i></i>最早明天 14:00配送</p>
+              </div>
               <div class="size">
                   <span>商品规格</span>
                   <ul class="">
