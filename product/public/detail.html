@@ -40,11 +40,13 @@
       }
       .options{
           border-bottom: 1px solid #D8D8D8;
-          padding-bottom:10px;
+          padding-bottom:30px;
+          margin-bottom:15px;
       }
       .options-left{
           width: 484px;
           display:inline-block;
+          vertical-align:top;
       }
       .options-left h2{
           color:#684029;
@@ -107,16 +109,17 @@
       .options-right{
           width: 500px;
           display: inline-block;
-          float: right;
+          /* float: right; */
           margin-top: 20px;     
+          /* background: yellow; */
+          margin-left:61px;
       }
+
       .options-right-top img{
           width: 300px;
           vertical-align:-15px;
       }
       .options-right-top{
-          /* background: pink;
-          border: 1px solid;     */
           margin-bottom: 15px;
       }
       .options-right-top .unit_price{
@@ -156,9 +159,11 @@
       }
       .options-right .size{
           margin-top:30px;
+          margin-bottom:15px;
       }
       .options-right .size span{
           font-size: 12px;
+          color:#684029;
       }
       .options-right .size ul{
          list-style: none;
@@ -177,7 +182,69 @@
         text-align: center;
         margin-right: 15px;
         box-sizing: border-box;
-
+        position:relative;
+      }
+      .options-right .size ul>li:hover{
+          color:#BB9772;
+      }
+      .options-right .size ul>li i{
+          width: 10px;
+          height: 10px;
+          background-image: url(img/icon.png);
+          background-size: 310px 120px;
+          background-position: 0 -40px;
+          position:absolute;
+          top:0px;
+          left:0px;
+       }
+      .options-right .swop{
+           margin-bottom:15px;
+       }
+      .options-right .swop span{
+        font-size: 12px;
+          color:#684029;
+      }
+      .options-right .swop a{
+          width: 42px;
+          height: 42px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left:15px;
+          margin-right:10px;
+          border:1px solid #684029;
+          position: relative;
+      }
+      .options-right .swop a img{
+          width: 100%;
+      }
+      .options-right .swop a i{
+          width: 10px;
+          height: 10px;
+          background-image: url(img/icon.png);
+          background-size: 310px 120px;
+          background-position: 0 -40px;
+          position:absolute;
+          left:0px;
+          top:0px;
+      }
+      .options button{
+          width: 167px;
+          height: 30px;
+          line-height: 30px;
+          font-size:13px;
+          border:0;
+      }
+      button.buy{
+          background: #F4F4F4;
+          color:#7A5844;
+      }
+      button.shopping_cart{
+          background:#684029;
+          color:#fff;
+          margin-left:10px;
+      }
+      .describe img{
+          width: 100%;
       }
     </style>
 </head>
@@ -239,16 +306,19 @@
                       <li class="">跟多磅数</li>
                   </ul>
               </div>
-              <div>
+              <div class="swop">
                   <span>换购商品</span>
-                 <a href=""> <img src="" alt=""><i></i></a>
+                 <a href="#" class=""> <img src="img/94f10b1ecc1cde3d3cda95495b3fc7a7.jpg" alt=""><i></i></a>
+                 <span>购买任意磅数蛋糕+21.00元换购</span>
               </div>
               <button class="buy">立即购买</button>
               <button class="shopping_cart">立即购买</button>
             </div>
         </div>
         <div class="describe">
-            fasdfsafsd
+           <img src="img/69e1cc931bc87519763355366ea85709.jpg" alt="">
+           <img src="img/ae32e2e764f7c59a67c562bf9a851747.jpg" alt="">
+           <img src="img/394da76d2fcb9f6d4dad20286a67f0c7.jpg" alt="">
         </div>
     </div>
     <script src="footer.js"></script>
