@@ -19,6 +19,7 @@
     margin-top:30px;
     padding : 0 36px;
     box-sizing:border-box;
+    text-align:center
 }
 .coffee-list li img{
     width: 100%;
@@ -38,4 +39,87 @@ button.book{
     border:0;
     background: #684029;
     width:136px;
+    color:#fff;
+    height: 30px;
 }
+.order_title{
+    height: 44px;
+    background:#FAFAFA;
+    border: 1px solid #E1E1E1;
+    line-height: 44px;
+    color: #684029;
+    font-size: 13px;
+    padding-left: 34px;
+    margin-top: 50px;
+}
+.order{
+    background:#FAFAFA;
+    border: 1px solid #E1E1E1;
+    margin-top:20px;
+    position: relative;
+    margin-bottom:100px;
+}
+.order-left{
+    width: 800px;
+}
+.order-left ul{
+  list-style:none;
+  width: 800px;
+  padding-top: 14px;
+  padding-left: 17px;
+  padding-bottom: 60px;
+}
+.order-left ul li{
+   height: 40px;
+   line-height: 40px;
+   margin-bottom: 12px;
+   box-sizing:border-box;
+}
+.order-left ul li span{
+    width: 75px;
+    height: 40px;
+    line-height: 40px;
+    display:inline-block;
+    color: #b3b3b3;
+    font-size: 13px;
+}
+.order-left ul li input{
+    width: 170px;
+    height: 38px;
+    border: 1px solid #efefef;
+    outline: none;
+    color: ;
+    font-size: 13px;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+input::-webkit-input-placeholder {
+    color: rgb(191,191,191); 
+    }
+.order-left ul li select{
+    height: 38px;
+    width: 168px;
+    font-size: 13px;
+    outline: none;
+    border: 1px solid #efefef;  
+} 
+.order-left ul li textarea{
+    width: 520px;
+    height: 70px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #efefef;
+    font-size: 13px;
+    vertical-align: top;
+    resize:none;
+}
+textarea::-webkit-input-placeholder {
+    color: rgb(191,191,191); 
+}
+.order-right{
+    width: 310px;
+    position: absolute;
+    right:0px;
+    bottom:0px;
+    background: pink;
+}    

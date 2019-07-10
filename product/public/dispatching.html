@@ -41,6 +41,54 @@
                 <button class="book">订购</button>
              </li>
         </ul>
+        <div class="order_title">订单信息</div>
+        <div class="order">
+           <div class="order-left">
+              <ul>
+                 <li>
+                    <span>收货人:</span>
+                    <input type="text" placeholder="收货人姓名">
+               </li>
+               <li>
+                     <span>联系方式:</span>
+                     <input type="text" placeholder="收货人联系方式">
+                </li>
+                <li>
+                     <span>城市:</span>
+                     <select name="sheng" id="">
+                        <option value="">广东省</option>
+                        <option value="">海南省</option>
+                     </select>
+                     <select name="shi" id="">
+                        <option value="">广州市</option>
+                        <option value="">深圳市</option>
+                        <option value="">茂名市</option>
+                        <option value="">湛江市</option>
+                     </select>
+                     <select name="qu" id="">
+                        <option value="">天河区</option>
+                        <option value="">海珠区</option>
+                        <option value="">番禺区</option>
+                        <option value="">荔湾区</option>
+                        <option value="">越秀区</option>
+                     </select>
+                </li>
+                <li>
+                     <span>详细地址:</span>
+                     <textarea placeholder="请输入详细地址"></textarea>
+                </li>
+              </ul>
+           </div>
+           <div class="order-right">
+              <p><span>商品金额:</span> <span>¥40.00</span></p>
+              <p><span>配送费:</span> <span>¥20.00</span></p>
+              <hr>
+              <p><span>合计:</span> <span>¥60.00</span></p>
+              <h6>发货及到货时间参考产品详情页说明</h6>
+              <button class="pay">在线付款</button>
+           </div>
+        </div>
     </div>
+    <script src="footer.js"></script>
 </body>
 </html>
