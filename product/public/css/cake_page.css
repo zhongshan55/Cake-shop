@@ -1,0 +1,109 @@
+.centent-box{
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .list_optional{
+      /* background: #0f0; */
+      padding-top: 20px;
+      margin-bottom: 35px;
+  }
+  .list_optional_bar{
+      border-top:1px solid #f2f2f2;
+      border-bottom:1px solid #f2f2f2;
+      padding-top:10px;
+      padding-bottom:10px;
+  }
+  .classift-list{
+      display: inline-block;
+  }
+  .list_optional_bar ul{
+      display:flex;
+      list-style:none;
+  }
+  .list_optional_bar span{
+   padding-left:12px;
+   padding-right:50px;
+   color:#9B9B9B;
+  }
+  .classify,.taste{
+      padding-top:15px;
+      padding-bottom:15px;
+  }
+  .list_optional_bar ul>li{
+      margin-left:25px;
+  }
+  .list_optional_bar ul>li a:hover{
+      color:#BB9772;
+  }
+  /* 蛋糕列表 */
+  .list-content{
+      padding-top:20px;
+  }
+  .list_content_ul{
+      display:flex;
+      list-style:none;
+      flex-wrap: wrap;
+      margin-top: 
+  }
+  .list_content_li{
+      width: 228px;
+      margin:0 18px;
+      padding: 0 18px;
+  }
+  .list_content_li .list-module .list-module-bg{
+      width: 228px;
+      transition: all 0.5s;
+  }
+  .list_content_li .list-module .list-module-bg:hover{
+   transform: scale(1.05);
+   box-shadow: 1px 1px 5px #ddd;
+   border-radius: 5px;
+  }
+  .list-module{
+      position:relative;
+  }
+  .list-module .list-module-icon{
+      position:absolute;
+      top:10px;
+      width: 65px;
+  }
+  .list-content p{
+      text-align: center;
+      margin-bottom:10px;
+  }
+  .list-content p:first-of-type>a{
+      font-size:13px;
+  }
+  .list-content p:first-of-type>a:hover{
+      color:#BB9772;
+  }
+  .list-content p:nth-of-type(2)>a{
+      font-size: 13px;
+      color: #BB9772;
+  }
+  a.sm-button{
+        display: inline-block;
+        border:1px solid #D5BFA7;
+        border-radius:10px;
+        font-size:12px;
+        padding-left:10px;
+        padding-right:10px;;
+        color: #D5BFA7;
+  }
+  i{
+      width:28px;
+      height: 28px;
+      background-image: url(img/icon.png);
+      background-position: -216px -40px;
+      display: inline-block;
+      background-size: 310px 120px;
+      vertical-align: middle;
+  }
+  .list-content p:nth-of-type(4)>a{
+      display:inline-block;
+      height: 28px;
+      line-height: 28px;
+  }
+  .list-content p:nth-of-type(4)>a:hover{
+      color:#D5BFA7;
+  }
