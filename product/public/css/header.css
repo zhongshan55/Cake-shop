@@ -82,24 +82,23 @@ height: 80px;
 div.app-hidden{
     width: 122px;
     height: 0;
+    overflow: hidden;
     text-align: center;
-    border: 1px solid #e1e1e2;
-    /* box-shadow: 0 1px 5px #e1e1e2; */
+    box-shadow: 0 1px 5px #e1e1e2;
     position: absolute;
     left:-30px;
     top: 70px;
     background: #fff;
     line-height:normal;
     box-sizing: border-box; 
-    display: none;   
-    transition: all 
+    transition: all .5s linear;
     
 }
 div.app-block{
     width: 122px;
-    /* height: 115px; */
+    height: 135px;
     text-align: center;
-    border: 1px solid #e1e1e2;
+    /* border: 1px solid #e1e1e2; */
     box-shadow: 0 1px 5px #e1e1e2;
     position: absolute;
     left:-30px;
@@ -107,6 +106,7 @@ div.app-block{
     background: #fff;
     line-height:normal;
     box-sizing: border-box;
+    display: block;
 }
 .app-hidden>img{
      width: 100px;
