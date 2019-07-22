@@ -47,10 +47,15 @@
 
        <script>
          var app=document.getElementsByClassName("app-download")[0];
+         var app_hide=document.getElementsByClassName("app-hidden")[0]
          app.onmouseover=function(){
-  document.getElementsByClassName("app-hidden")[0].classList.add("app-block");
+             app_hide.classList.add("app-block");
          }
-      var 
+        //  var not_app=document.querySelectorAll(".app-download,.app-hidden");
+
+       app.onmouseout=function(){
+            app_hide.classList.remove("app-block");
+         }
         
 
        </script>
