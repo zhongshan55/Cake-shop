@@ -12,19 +12,16 @@
         <!--  顶部导航栏 -->
 				<script src="js/head.js"></script>
    <!-- 轮播图-->
-     <div class="carousel">
-         <div class="btn-left"></div>
-         <ul class="ul-imgs">
-             <li><a href="javascript:;"><img src="" alt=""></a></li>
-             <li><a href="javascript:;"><img src="" alt=""></a></li>
-             <li><a href="javascript:;"><img src="" alt=""></a></li>
-             <li><a href="javascript:;"><img src="" alt=""></a></li>
-             <li><a href="javascript:;"><img src="" alt=""></a></li>
-             <li><a href="javascript:;"><img src="" alt=""></a></li>
+     <div id="carousel">
+         <div id="btn-left"></div>
+         <ul id="ul-imgs">
+             <li><a href="javascript:;"><img src="img/1562201377363663584.jpg" alt=""></a></li>
+             <li><a href="javascript:;"><img src="img/1562527412930249997.jpg" alt=""></a></li>
+             <li><a href="javascript:;"><img src="img/w01.jpg" alt=""></a></li>
+             <li><a href="javascript:;"><img src="img/1562201377363663584.jpg" alt=""></a></li>
          </ul>
          <ul id="ul-idxs">
              <li class="active"></li>
-             <li></li>
              <li></li>
              <li></li>
          </ul>
@@ -33,11 +30,11 @@
     <!-- 轮播图js  -->
     <script>
        var i=0;         //现在正在显示第几张图片,从0开始
-       var LIWIDTH=100;//每个li的固定高度
+       var LIWIDTH=1200;//每个li的固定高度
        var DURATION=500;//每次轮播动画持续的时间
        var LICONT=4;    //li的总个数
        //要移动的ul
-       var ulImgs=document.getElememtById("ul-imgs");
+       var ulImgs=document.getElementById("ul-imgs");
        //包含小圆点列表的ul
        var ulIdxs=document.getElementById("ul-idxs");
        var lis=ulIdxs.children;
@@ -78,7 +75,7 @@
                },DURATION)
            }
            //再给当前位置的小圆点添加calss.active
-           lis[i].calssName="active";
+           lis[i].className="active";
        }
     //    左右切换按钮
        var btnLeft=document.getElementById("btn-left");
@@ -96,7 +93,7 @@
              canClick=false;//马上把开关关上,禁止再次点击
              //只有本地transition动画播放完,才能自动打开开关,点击按钮才有反应.
              setTimeout(function(){
-                 canClick=ture;
+                 canClick=true;
              },DURATION+100);
              }
          }
@@ -117,6 +114,29 @@
               moveTo();
           },3000)
       }
+      var ulIdxs=document.getElementById("ul-idxs");
+      var canClick=true;
+      ulIdxs.onclick=function(e){
+        if(canClick){
+            var li=e.target;
+            if(li.nodeName=="LI"){
+                if(li.className!=="active"){
+                    for(var i=0; i<lis.length;i++){
+                        if(lis[i]==li){
+                            break;
+                        }
+                    }
+                    moveTo(i);
+                    setTimeout(function(){
+                        canClick=true;
+                },DURATION);
+            }
+          } 
+        }
+      }
+
+
+
     </script>  
      <!-- 中间内容区域 -->
       
