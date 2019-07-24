@@ -99,7 +99,7 @@
     .options-left .term i{
      width: 19px;
      height: 20px;
-     background-image: url(img/icon.png);
+     background-image: url(../img/icon.png);
      display: inline-block;
      background-position:-118px -2px;
      background-size:240px;
@@ -171,7 +171,7 @@
         display: inline-block;
         margin:0 10px;
         vertical-align: middle;
-        background-image: url(img/icon.png);
+        background-image: url(../img/icon.png);
         background-size: 310px 120px;
     }
     .options-right>.weight_time>p:first-of-type>i{
@@ -219,7 +219,7 @@
     .options-right .size ul>li i{
         width: 10px;
         height: 10px;
-        background-image: url(img/icon.png);
+        background-image: url(../img/icon.png);
         background-size: 310px 120px;
         background-position: 0 -40px;
         position:absolute;
@@ -249,7 +249,7 @@
     .options-right .swop a i{
         width: 10px;
         height: 10px;
-        background-image: url(img/icon.png);
+        background-image: url(../img/icon.png);
         background-size: 310px 120px;
         background-position: 0 -40px;
         position:absolute;

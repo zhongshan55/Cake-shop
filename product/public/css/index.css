@@ -15,15 +15,17 @@
        }
        .directory ul li a{
            display: block;
-           /*height: 100px;        ;*/
            box-shadow:0 2px 6px 0 rgba(0,0,0,0.06)
+       }
+       .directory ul li a:hover{
+    box-shadow:1px 2px 10px 0px rgba(0,0,0,0.3)
        }
        .directory ul li a img{
            display:block;
            border-radius:8px;
        }
        .home-module{
-           /*background: yellow;*/
+           /* background: yellow; */
            padding:50px;
        box-sizing:border-box;
        }
@@ -47,29 +49,29 @@
        .banner>a>img{
            display: block;
        }
-       .module-cakelist ul{
+       .module-cakelist>ul{
            width: 1100px;
            margin:0 auto;
            display:flex;
            justify-content:space-between;
        }
-       .module-cakelist ul li{
+       .module-cakelist>ul>li{
            width:263px;
        }
-       .module-cakelist ul li img{
+       .module-cakelist>ul>li img{
            background: #fafafa ;
            transition: all .5s ;
        }
-       .module-cakelist ul li img:hover{
+       .module-cakelist>ul>li img:hover{
            transform: scale(1.05);
           box-shadow: 1px 1px 5px #ddd;
           border-radius:5px;
        }
-       .module-cakelist ul li h2{
+       .module-cakelist>ul>li h2{
            color:#000;
            font-size:16px;
        }
-       .module-cakelist ul li p{
+       .module-cakelist>ul>li p{
            color: #616161;
            font-size: 14px;
            margin-top:5px;
@@ -96,12 +98,44 @@
           color: #D5BFA7;
       }
       .modulelist-car{
+          height: 20px;
           float: right;
           background: #643E28;
           color: #fff;
           border:0;
           outline:0;
+          font-size: 12px;
+          padding: 0 10px;
       }
+      .module-cakelist .live_buy ul>li{
+        display:inline-block;
+        border: 1px solid #e7e0dd;
+        color:#684029;
+        font-size: 12px;
+        width: 60px;
+        height: 30px;
+        padding:0 5px;
+        line-height: 30px;
+        text-align: center;
+        margin-right: 15px;
+        box-sizing: border-box;
+        position:relative;
+      }
+      .module-cakelist .live_buy ul>li:hover{
+        color:#BB9772;
+      }
+      .module-cakelist .live_buy ul>li i{
+        width: 10px;
+        height: 10px;
+        background-image: url(../img/icon.png);
+        /* background: red; */
+        background-size: 310px 120px;
+        background-position: 0 -40px;
+        position:absolute;
+        top:0px;
+        left:0px;
+      }
+      
       /* 活动门 */
       #module-activity .activity-content{
          padding-top:10px;
