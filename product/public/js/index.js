@@ -104,3 +104,17 @@
       } 
     }
   }
+
+  //加入购物车
+  var carts=document.querySelectorAll(".modulelist-car")
+ 
+  for(var cart of carts){
+   cart.onclick=function(){
+    var buy_in=cart.parentElement
+   var b=buy_in.nextElementSibling
+    // buy_in.classList.add("block");
+    console.log(cart);
+    console.log(buy_in);
+    console.log(b);
+  }
+}

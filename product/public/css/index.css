@@ -57,6 +57,7 @@
        }
        .module-cakelist>ul>li{
            width:263px;
+           position: relative;
        }
        .module-cakelist>ul>li img{
            background: #fafafa ;
@@ -106,6 +107,19 @@
           outline:0;
           font-size: 12px;
           padding: 0 10px;
+          margin-right: 1px;
+      }
+      .module-cakelist .live_buy{
+          background: #fafafa;
+          padding: 12px;
+          position: absolute;   
+          left: 0;
+          bottom: 0;    
+          display: none;
+          overflow: hidden;
+      }
+      .module-cakelist .live_buy.block{
+          display:block;
       }
       .module-cakelist .live_buy ul>li{
         display:inline-block;
@@ -124,18 +138,79 @@
       .module-cakelist .live_buy ul>li:hover{
         color:#BB9772;
       }
-      .module-cakelist .live_buy ul>li i{
+      .module-cakelist .live_buy ul>li i.active{
         width: 10px;
         height: 10px;
         background-image: url(../img/icon.png);
-        /* background: red; */
         background-size: 310px 120px;
         background-position: 0 -40px;
         position:absolute;
         top:0px;
         left:0px;
       }
-      
+      .module-cakelist .live_buy p{
+          color:#684029;
+          font-size: 16px;
+      }
+      .module-cakelist .live_buy .buy{
+          width: 114px;
+          height: 30px;
+          line-height: 30px;
+          color: #7A5844;
+          text-align:center;
+          background: #fff;
+          border: 0;
+          outline:none; 
+          margin-right: 6px;
+          margin-top:18px;
+      }
+      .module-cakelist .live_buy .shopping_cart{
+        width: 114px;
+        height: 30px;
+        line-height: 30px;
+        color: #fff;
+        text-align:center;
+        background: #684029;
+        border: 0;
+        outline:none;
+        margin-top:18px;
+      }
+      .module-cakelist .cart_success{
+          width: 100%;
+          height: 109px;
+          padding: 12px;
+          display:none;
+          background: #fafafa;
+          text-align: center;
+          position: absolute;
+          bottom:0;
+      }
+      .module-cakelist .cart_success p>i{
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        background-image: url(../img/icon.png);
+        background-position: -266px -40px;
+        vertical-align: middle;
+        background-size: 310px 120px;
+        margin-right:10px;
+      }
+      .module-cakelist .cart_success p{
+          padding: 8px;
+          color: #B08C7E;
+          margin-top: 20px;
+      }
+      .module-cakelist .cart_success a{
+          background: #684029;
+          font-size: 13px;
+          width: 148px;
+          height: 30px;
+          color: #fff;
+          display: block;
+          text-align: center;
+          line-height: 30px;
+          margin:0 auto;
+      }
       /* 活动门 */
       #module-activity .activity-content{
          padding-top:10px;
