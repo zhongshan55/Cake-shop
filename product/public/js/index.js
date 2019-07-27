@@ -109,12 +109,23 @@
   var carts=document.querySelectorAll(".modulelist-car")
  
   for(var cart of carts){
+      
    cart.onclick=function(){
-    var buy_in=cart.parentElement
-   var b=buy_in.nextElementSibling
-    // buy_in.classList.add("block");
+       var cart=this;
+    var buy_in=cart.parentElement.nextElementSibling;
+    buy_in.classList.add("block");
     console.log(cart);
     console.log(buy_in);
-    console.log(b);
   }
 }
+var btn_bangs=document.querySelectorAll(".module-cakelist .live_buy ul>li")
+   for(var btn_bang of btn_bangs){
+       btn_bang.onclick=function(){
+           var btn_bang=this;
+           console.log(btn_bang)
+        //    var btn_i=btn_bang.firstElementChild;
+         
+           btn_bang.firstElementChild.classList.add("active");
+           btn_bang
+       }
+   } 

@@ -111,15 +111,24 @@
       }
       .module-cakelist .live_buy{
           background: #fafafa;
-          padding: 12px;
+          padding: 0px;
           position: absolute;   
           left: 0;
           bottom: 0;    
-          display: none;
+          /* display: none; */
+          height: 0px;
           overflow: hidden;
+          transition: all .3s linear
       }
       .module-cakelist .live_buy.block{
-          display:block;
+        background: #fafafa;
+        padding: 12px;
+        position: absolute;   
+        left: 0;
+        bottom: 0;    
+        /* display: none; */
+        height: 109px;
+        overflow: hidden;
       }
       .module-cakelist .live_buy ul>li{
         display:inline-block;
