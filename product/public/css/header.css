@@ -12,7 +12,7 @@ display:block;
 position:fixed;
 border-bottom:2px solid #e1e1e2;
 background: #fff;
-z-index: 100;
+z-index: 10000;
 }
 .header-content a:hover{color:rgb(187,151,114)}
 .header-content{
@@ -72,7 +72,7 @@ display: inline-block;
 display: inline-block;
 width:80px;
 }
-.header-right a img{
+.header-right a>img{
 width:18px;
 display: inline-block;
 }
@@ -108,7 +108,7 @@ div.app-block{
     box-sizing: border-box;
     display: block;
 }
-.app-hidden>img{
+.header-right .app-download .app-hidden>img{
      width: 100px;
      vertical-align: middle;
      padding-top:10px; 
@@ -121,4 +121,42 @@ height: 25px;
 line-height: 25px;
 margin: 0;
 padding: 0;
+}
+.header-right #gz .city{
+    position: absolute;
+    top: 70px;
+    left:45px;
+    height: 0;
+    opacity: 0;
+    border: 1px solid #ddd;
+    width: 80px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 5px 0px rgb(0,0,0,0.3);
+    overflow: hidden;
+    transition: all .5s linear;
+}
+.header-right #gz:hover .city{
+    position: absolute;
+    top: 70px;
+    left:45px;
+    height: 122px;
+    opacity: 1;
+    border: 1px solid #ddd;
+    width: 80px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 5px 0px rgb(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.header-right #gz .city>li{
+    display:block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: rgb(187,151,114);
+}
+.header-right #gz .city>li:hover{
+    color: #684029;
 }

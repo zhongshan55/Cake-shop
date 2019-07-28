@@ -1,4 +1,13 @@
-  <header id="header">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
     <div class="header-box">
         <div class="header">
          <div class=header-content>
@@ -45,4 +54,26 @@
         </div>
        </div>
        <div class="collapse"></div>  <!-- 防止顶部坍塌-->
-    </header>
+
+       <script>
+         var app=document.getElementsByClassName("app-download")[0];
+         var app_hide=document.getElementsByClassName("app-hidden")[0]
+         app.onmouseover=function(){
+             app_hide.classList.add("app-block");
+         }
+        //  var not_app=document.querySelectorAll(".app-download,.app-hidden");
+
+       app.onmouseout=function(){
+            app_hide.classList.remove("app-block");
+         }
+
+      var citys=document.querySelectorAll(".header-right #gz .city>li")
+             for(var city of citys){
+                 city.onclick=function(){
+                   var city=this;
+                   city.parentElement.previousElementSibling.innerHTML=city.innerHTML; 
+                 }
+             }
+       </script>
+</body>
+</html>

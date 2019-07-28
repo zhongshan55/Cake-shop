@@ -114,18 +114,34 @@
        var cart=this;
     var buy_in=cart.parentElement.nextElementSibling;
     buy_in.classList.add("block");
-    console.log(cart);
-    console.log(buy_in);
-  }
-}
+    // console.log(cart);
+    // console.log(buy_in);
+ 
 var btn_bangs=document.querySelectorAll(".module-cakelist .live_buy ul>li")
+var btn_is=document.querySelectorAll(".module-cakelist .live_buy ul>li>i")
+var no_bangs=document.querySelectorAll(":not(.live_buy)")
+// console.log(no_bangs)
    for(var btn_bang of btn_bangs){
        btn_bang.onclick=function(){
            var btn_bang=this;
            console.log(btn_bang)
-        //    var btn_i=btn_bang.firstElementChild;
-         
-           btn_bang.firstElementChild.classList.add("active");
-           btn_bang
+        for(var btn_i of btn_is){
+            btn_i.className="";
+        }     
+     btn_bang.firstElementChild.classList.add("active");
        }
    } 
+   console.log(buy_in.getAttribute("class"));
+   if(buy_in.getAttribute("class")=="live_buy block"){
+       console.log(111);
+       setTimeout(function(){
+  for(var no_bang of no_bangs){
+   no_bang.onclick=function(){
+    buy_in.classList.remove("block");
+console.log(1112)}
+     }
+   },100)
+} 
+ }
+}
+
