@@ -107,41 +107,53 @@
 
   //加入购物车
   var carts=document.querySelectorAll(".modulelist-car")
- 
+  var layer=document.querySelector(".layer-shade");
   for(var cart of carts){
       
    cart.onclick=function(){
        var cart=this;
     var buy_in=cart.parentElement.nextElementSibling;
+    console.log(buy_in);
     buy_in.classList.add("block");
-    // console.log(cart);
-    // console.log(buy_in);
+    layer.classList.add("block");
+
+   layer.onclick=function(){
+        buy_in.classList.remove("block");
+        layer.classList.remove("block");
+   }
+
+}
+}
  
 var btn_bangs=document.querySelectorAll(".module-cakelist .live_buy ul>li")
 var btn_is=document.querySelectorAll(".module-cakelist .live_buy ul>li>i")
-var no_bangs=document.querySelectorAll(":not(.live_buy)")
-// console.log(no_bangs)
+
    for(var btn_bang of btn_bangs){
        btn_bang.onclick=function(){
            var btn_bang=this;
-           console.log(btn_bang)
+        //    console.log(btn_bang)
         for(var btn_i of btn_is){
             btn_i.className="";
         }     
      btn_bang.firstElementChild.classList.add("active");
        }
    } 
-   console.log(buy_in.getAttribute("class"));
-   if(buy_in.getAttribute("class")=="live_buy block"){
-       console.log(111);
+   //加入购物车成功
+   var cart_btns=document.querySelectorAll(".live_buy .shopping_cart")
+   console.log(cart_btns)
+   for(var cart_btn of cart_btns){
+       cart_btn.onclick=function(){
+           var cart_btn=this;
+           var  buy_in=cart_btn.parentElement.parentElement;
+               console.log(buy_in);
+              buy_in.classList.remove("block");
+              buy_in.nextElementSibling.classList.add("block");
+              layer.classList.remove("block");
        setTimeout(function(){
-  for(var no_bang of no_bangs){
-   no_bang.onclick=function(){
-    buy_in.classList.remove("block");
-console.log(1112)}
-     }
-   },100)
-} 
- }
-}
+        buy_in.nextElementSibling.classList.remove("block");
+       },3000)
+       }
+   }
+
+  
 
