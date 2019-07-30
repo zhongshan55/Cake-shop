@@ -4,7 +4,8 @@
     <title>cake首页</title>
     <meta charset="utf-8">
 		<link rel="shortcut icon" href="img/cupcake.ico">
-		<link rel="stylesheet" href="header&footer.css" type="text/css">
+		<link rel="stylesheet" href="css/header.css" type="text/css">
+		<link rel="stylesheet" href="css/footer.css" type="text/css">
       <style>
           /*  注册  */
           .reg-background{
@@ -90,38 +91,54 @@
   </head>
     <body>
 
-	<div class="header-box">
-	 <div class="header">
-	  <div class=header-content>
-	    <a href="#" class="header-logo">
-		   <img src="img/logo.png" alt="logo" width=144px>
-		</a>
-		<ul>
-			<li><a href="#">首页</a></li>
-			<li><a href="#">蛋糕</a></li>
-			<li><a href="#">面包</a></li>
-			<li><a href="#">冰淇淋</a></li>
-			<li><a href="#">咖啡下午茶</a></li>
-			<li><a href="#">咖啡全国送</a></li>
-			<li><a href="#">企业专区</a></li>
-		</ul>
-		<div class="header-right">
-		  <a href="#" class="app-download">APP下载</a>
-		  <a id="gz">广州</a>
-		  <a href="" class="msg">消息</a>
-		  <span class="headr-reg">
-		    <a href="javascript:location.href='http://127.0.0.1:8080/login.html'">登录</a>
-			/
-			<a href="javascript:location.href='http://127.0.0.1:8080/reg.html'">注册</a>
-		  </span>
-		  <a href="#">
-		    <img src="img/cat.png" alt="" >
-		  </a>
-		</div>
-	  </div>
-     </div>
-	</div>
-	<div class="collapse"></div>  <!-- 防止顶部坍塌-->
+        <header id="header">
+            <div class="header-box">
+                <div class="header">
+                 <div class=header-content>
+                   <a href="javascript:;" class="header-logo">
+                      <img src="img/logo.png" alt="logo" width=144px>
+                   </a>
+                   <ul>
+                       <li><a href="index.html">首页</a></li>
+                       <li><a href="cake_page.html">蛋糕</a></li>
+                       <li><a href="#">面包</a></li>
+                       <li><a href="#">冰淇淋</a></li>
+                       <li><a href="#">咖啡下午茶</a></li>
+                       <li><a href="dispatching.html">咖啡全国送</a></li>
+                       <li><a href="#">企业专区</a></li>
+                   </ul>
+                   <div class="header-right">
+                     <a href="javascript:;" class="app-download">APP下载
+                      <div class="app-hidden ">
+                        <img src="img/二维码201907172346.png" alt="">
+                        <p>下载享受更多优惠</p>           
+                   </div>
+                     </a>
+                     <div id="gz">
+                       <span>广州</span>
+                       <ul class="city">
+                         <li>深圳</li>
+                         <li>上海</li>
+                         <li>北京</li>
+                         <li>广州</li>
+                       </ul>
+                      </div>
+                     <a href="" class="msg">消息</a>
+                     <span class="headr-login">
+                       <a href="login.html">登录</a>
+                       /
+                       <a href="javascript:location.href='http://127.0.0.1:8080/reg.html'">注册</a>
+                     </span>
+                     <a href="#">
+                       <img src="img/cat.png" alt="" >
+                     </a>
+        
+                   </div>
+                 </div>
+                </div>
+               </div>
+               <div class="collapse"></div>  <!-- 防止顶部坍塌-->
+            </header>
  <!-- 注册   -->
  <table></table>
 	<div class="reg-background">
@@ -243,11 +260,29 @@
 
 
       }
-	</script>
+    </script>
+       <script>
+        var app=document.getElementsByClassName("app-download")[0];
+        var app_hide=document.getElementsByClassName("app-hidden")[0]
+        app.onmouseover=function(){
+            app_hide.classList.add("app-block");
+        }
+      app.onmouseout=function(){
+           app_hide.classList.remove("app-block");
+        }
+
+     var citys=document.querySelectorAll(".header-right #gz .city>li")
+            for(var city of citys){
+                city.onclick=function(){
+                  var city=this;
+                  city.parentElement.previousElementSibling.innerHTML=city.innerHTML; 
+                }
+            }
+      </script>
     
   </body>
 
-
+</html>
 
 
 
