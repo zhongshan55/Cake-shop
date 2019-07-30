@@ -115,11 +115,12 @@
           position: absolute;   
           left: 0;
           bottom: 0;    
-          display: none;
+          /* display: none; */
           height: 0px;
           overflow: hidden;
           transition: all .3s linear;
           width: 263px;
+          height: 0;
           z-index:1001;
           box-sizing: border-box;
       }
@@ -129,7 +130,7 @@
         position: absolute;   
         left: 0;
         bottom: 0;    
-        display: block;
+        /* display: block; */
         height: 150px;
         overflow: hidden;
          width: 263ox;
@@ -195,7 +196,7 @@
       }
       .module-cakelist .cart_success{
           width: 263px;
-          height: 150px;
+          height: 0;
           padding: 12px;
           display:none;
           background: #fafafa;
