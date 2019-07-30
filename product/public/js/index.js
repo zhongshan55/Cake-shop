@@ -107,6 +107,7 @@
 
   //加入购物车
   var carts=document.querySelectorAll(".modulelist-car")
+  console.log(carts);
   var layer=document.querySelector(".layer-shade");
   for(var cart of carts){
       
