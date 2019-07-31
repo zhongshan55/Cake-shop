@@ -15,13 +15,13 @@ $lis.click(function(){
     .children().removeClass("active")
       var bang=parseInt($li.text()).toFixed(1);
       if(bang!="NaN"){
-      $("span.unit_price").html(`￥${Number(bang*198).toFixed(2)}`);
+     $("span.unit_price").html(`￥${Number(bang*198).toFixed(2)}`);
       $("span.pound").html(`/${bang}磅`)
+  //向下滚动到某位置时顶部显示所选磅数
+   $(".top_pirce_p").html(`${ $("span.unit_price").html()+ $("span.pound").html()}`);
       }
 })
-//向下滚动到某位置时显示顶部标题
-     var unit_price=$("#unit_price").text();
-     console.log(unit_price);
-     var pound=$("pound").text();
-   console.log( $(".top_pirce_p").html(`${unit_price}`));
+
+    
+   
     
