@@ -19,3 +19,9 @@ $lis.click(function(){
       $("span.pound").html(`/${bang}磅`)
       }
 })
+//向下滚动到某位置时显示顶部标题
+     var unit_price=$("#unit_price").text();
+     console.log(unit_price);
+     var pound=$("pound").text();
+   console.log( $(".top_pirce_p").html(`${unit_price}`));
+    
