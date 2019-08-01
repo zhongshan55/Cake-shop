@@ -17,11 +17,30 @@ $lis.click(function(){
       if(bang!="NaN"){
      $("span.unit_price").html(`￥${Number(bang*198).toFixed(2)}`);
       $("span.pound").html(`/${bang}磅`)
-  //向下滚动到某位置时顶部显示所选磅数
+  //顶部显示所选磅数与中间内容区域一致
    $(".top_pirce_p").html(`${ $("span.unit_price").html()+ $("span.pound").html()}`);
       }
 })
-
+$(document).scroll(function(){
+  var h=$(document).scrollTop();
+  // console.log(h);
+  if(h>1021){
+    $("header").css("display","none");
+    $(".suspension-box").css("display","block")
+  }
+  if(h<940){ 
+    $("header").css("display","block");
+    $(".suspension-box").css("display","none")
+  }
+})
+$(".top_pirce_p").mouseenter(function(){
+  console.log(1221)
+   $(".options-right.top").css("display","block")
+})
+$(".top_pirce_p").mouseleave(function(){
+  console.log(12)
+   $(".options-right.top").css("display","none")
+})
     
    
     
