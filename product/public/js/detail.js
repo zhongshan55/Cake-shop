@@ -33,12 +33,12 @@ $(document).scroll(function(){
     $(".suspension-box").css("display","none")
   }
 })
-$(".top_pirce_p").mouseenter(function(){
+$(".top_price_p").mouseenter(function(){
   console.log(1221)
    $(".options-right.top").css("display","block")
 })
-$(".top_pirce_p").mouseleave(function(){
-  console.log(12)
+$(".top_price_p").mouseleave(function(){
+  console.log(1200)
    $(".options-right.top").css("display","none")
 })
     

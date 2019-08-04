@@ -300,11 +300,16 @@
         font-weight:normal;
         float:left;
     }
-    .suspension-title>p, .suspension-title>a{
+    .top_price_p{
         float: right;
         font-size:20px;
         color:#684029;
         position: relative;
+        height: 60px;
+    }
+    .suspension-title>a{
+        float: right;
+        line-height: 80px;
     }
     .suspension-title a i{
         background-image: url(../img/icon.png);
@@ -313,16 +318,15 @@
         display:block;        
         width: 30px;
         height: 30px;
-        margin-top:20px;
+        /* margin-top:20px; */   
     }
     .options-right.top{
         position: absolute;
-        top:80px;
+        top:60px;
         background: #fff;
         margin-top:0;
-        background: #fff;
         right: 10px;
         padding:14px 20px;
         border:1px solid #ddd;
+        transition: all .5s linear;
     } 
-  
