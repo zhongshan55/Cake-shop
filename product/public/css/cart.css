@@ -3,6 +3,9 @@ body{
     font-size: 13px;
     font-family: 'PingFang SC','Heiti SC','微软雅黑',Helvetica,Arial;
 }
+ul{
+    list-style:none;
+}
 .cart-box{
     margin: 0 auto;
     width: 1200px;
@@ -44,29 +47,35 @@ ul.cart-title{
     width: 300px;
 }
 .cart-title>li:nth-child(3){
-    width: 115px;
+    width: 130px;
 }
 .cart-title>li:nth-child(4){
     width: 150px;
 }
 .cart-title>li:last-child{
-    width: 180px;
+    width: 170px;
 }
 /* 购物车列表   */
 .cart-details{
   border:1px solid #E1E1E1;
 }
-.cart-details tr>td>img{
+.cart-details tr>.goods-img>div{
+    margin-left:60px;
+    padding:24px 0px;
+    border-bottom:2px dashed #F1F1F1;
+}
+.cart-details tr>.goods-img>div>img{
     width: 80px;
-    margin-left: 60px;
+    /* margin-left: 60px; */
     border: 1px solid #EFEFEF;
     margin-top: 10px;
     margin-right: 10px;
 }
 .goods-cake{
     /* padding-left: 10px; */
-    width: 300px;
+    width: 290px;
     box-sizing: border-box;
+    border-bottom:2px dashed #F1F1F1;
 }
 .cart-details .goods-cake>p:first-child{
     color: #684029;
@@ -78,7 +87,7 @@ ul.cart-title{
     color: #D5BFA7;
     font-size: 13px;
     margin-top: 0px;
-    margin-bottom: 5px
+    margin-bottom: 10px;
 }
 .goods-cake div>i{
     width: 35px;
@@ -92,4 +101,133 @@ ul.cart-title{
 .goods-cake div>span{
     font-size: 12px;
     color: #CECECE;
+}
+td.select-birthday{
+    width: 300px;
+    border-bottom:2px dashed #F1F1F1;
+}
+select{
+    border-color:#D5D5D5;
+    width:226px;
+    height: 22px;
+    color:#684029;
+}
+td.cart-unit-price{
+    width: 114px;
+    border-bottom:2px dashed #F1F1F1;
+}
+td.number-li{
+    width: 140px;
+    border-bottom:2px dashed #F1F1F1;
+}
+td.number-li button{
+    width: 22px;
+    height: 22px;
+    border: none;
+    font-size: 18px;
+    line-height: 20px;
+    vertical-align: middle;
+    outline: none;
+}
+td.number-li input{
+    width: 50px;
+    text-align: center;
+    height:18px;
+    border:1px solid #D5D5D5;
+    margin-left:-4px;
+    margin-right:-4px;
+}
+td.money{
+width: 100px;
+border-bottom:2px dashed #F1F1F1;
+}
+td.delete>a>i{
+    background: url(../img/icon.png);
+    background-size: 310px 120px;
+    background-position:-221px -70px;
+    width: 12px;
+    height: 12px;
+    display:block;
+    margin-left:40px;
+}
+.cart-CakeList{
+    display:flex;
+    margin-left:60px;
+    margin-right:60px;
+    padding-left:0;
+    border-top:2px solid #E0E0E0;
+    flex-wrap: wrap;
+}
+.cart-CakeList li{
+   width: 244px;
+   box-sizing:border-box;
+   margin-right:24px;
+   padding-top:12px;
+
+}
+.cart-CakeList>li>img{
+    width: 80px;
+    border: 1px solid #EFEFEF;
+    margin-top: 10px;
+    margin-right: 10px;
+    vertical-align:middle;
+}
+.cart-CakeList>li>div{
+    display:inline-block;
+}
+.cart-CakeList>li>div>p:first-child{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.cart-CakeList>li>div>p:nth-child(2){
+    color: #D5BFA7;
+    font-size: 13px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.cart-CakeList>li>div>a>i{
+    width: 24px;
+    height: 24px;
+    background: url(../img/icon.png);
+    background-size: 310px 120px;
+    background-position:-194px -70px;
+    display:block;
+}
+.cart-total{
+   /* height: ; */
+   border: 1px solid #E1E1E1;
+   background: #fbfbfb;
+   padding:26px 60px 32px 60px;
+   margin:20px 0;
+}
+.cart-total>a{
+    float:left;
+    text-decoration: none;
+    color:#684029;
+}
+.cart-total>a:hover{
+    color:#BB9772;
+}
+.cart-total>a>i{
+    display:inline-block;
+    width: 18px;
+    height: 21px;
+    background: url(../img/icon.png);
+    background-size:310px 120px;
+    background-position: -148px -71px;
+    vertical-align:middle;
+    margin-right:10px;
+}
+.cart-total>div{
+    text-align:right;
+}
+.cart-total>div>span{
+    width: 232px;
+    height: 42px;
+    border-top:2px solid #E2E2E2;
+    display: inline-block;
+    line-height: 43px;
+}
+.cart-total>div>button{
+    display:block;
 }
